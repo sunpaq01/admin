@@ -5,9 +5,7 @@ import {CommonModule} from '@angular/common';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {RouterModule} from '@angular/router';
 import {AppComponent} from './app.component';
-import {LoginComponent} from './login/login.component';
 import {appRoutes} from './app.routes';
-import {LoginService} from './login/login.service';
 import {WorkspaceService} from './workspace/workspace.service';
 import {DataTableService} from './data-table/data-table.service';
 import {Ajax} from './common/ajax';
@@ -19,7 +17,6 @@ import {InputTextModule} from 'primeng/primeng';
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
   ],
   imports: [
     CommonModule,
@@ -40,7 +37,6 @@ import {InputTextModule} from 'primeng/primeng';
   ],
   providers: [
     Ajax,
-    LoginService,
     WorkspaceService,
     DataTableService,
   ],
