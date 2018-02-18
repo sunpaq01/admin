@@ -48,7 +48,9 @@ export class WorkspaceComponent implements OnInit {
   };
 
   ngOnInit() {
+
     this.getMenu();
+    this.myService.test();
     /* 判断登录情况
     if (sessionStorage.getItem('userToken')) {
       this.realname = sessionStorage.getItem('realname');

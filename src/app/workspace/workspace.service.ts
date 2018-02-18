@@ -24,6 +24,10 @@ export class WorkspaceService {
 
   }
 
+  test() {
+    this.http.get('/api/test').subscribe(data => {
+      console.log(data);
+    });
+  }
 
-
-}//class end
+} // class end
