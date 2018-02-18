@@ -49,11 +49,13 @@ export class WorkspaceComponent implements OnInit {
 
   ngOnInit() {
     this.getMenu();
+    /* 判断登录情况
     if (sessionStorage.getItem('userToken')) {
       this.realname = sessionStorage.getItem('realname');
     } else {
       this.router.navigateByUrl('login');
     }
+    */
   }
 
   /*************************  ********************************/
@@ -108,8 +110,8 @@ export class WorkspaceComponent implements OnInit {
   }
 
   /************************* 退出登录 ********************************/
-  loginOut() {
-    sessionStorage.clear();
-    this.router.navigateByUrl('login');
-  }
+  //loginOut() {
+  //  sessionStorage.clear();
+  //  this.router.navigateByUrl('login');
+ // }
 }
